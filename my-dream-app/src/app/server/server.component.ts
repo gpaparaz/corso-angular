@@ -7,6 +7,12 @@ import { Component } from "@angular/core";
     templateUrl: './server.component.html' //file esterno
 })
 export class ServerComponent {
+    // proprietà nel mio template:
+    serverId: number = 10;
+    serverStatus: string = 'offline';
 
+    getServerStatus() {
+        return this.serverStatus;
+    }
 
 }
